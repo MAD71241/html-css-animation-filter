@@ -104,3 +104,14 @@
     0% {background-color: red;}
     100% {background-color: #f5f5f5;}
 }
+/* risoluzione esercizio 5 */
+.ex-5-square:hover {
+    transition: 0.3s;
+    height: 80px;
+    width: 80px;
+}
+.ex-5-square:active {
+    transition: 0.2s;
+    height: 50px;
+    width: 50px;
+}
