@@ -151,7 +151,10 @@
 
 /* risoluzione esercizio 8 */
 
-.ex-8-img {
+.ex-8-img:hover
+/* cancellami */
+
+    {
     /* regole necessarie all'animazione */
     animation-name: smarmella;
     animation-duration: 2s;
@@ -180,7 +183,10 @@
 
 /* risoluzione esercizio 9 */
 
-.ex-9-img {
+.ex-9-img:hover
+/* cancellami */
+
+    {
     /* regole necessarie all'animazione */
     animation-name: apri_tutto;
     animation-duration: 5s;
@@ -252,5 +258,131 @@
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+/* risoluzione esercizio 12 */
+
+/* regole necessarie all'animazione */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: loading-top-12;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: loading-bot-12;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: loading-top-13;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: loading-bot-13;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+/* /regole necessarie all'animazione */
+
+@keyframes loading-top-12 {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    100% {
+        top: -10px;
+        left: 100%;
+    }
+}
+
+@keyframes loading-bot-12 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    100% {
+        bottom: -10px;
+        right: 80%;
+    }
+}
+
+/* risoluzione esercizio 13 */
+
+@keyframes loading-top-13 {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    15% {
+        top: -10px;
+        left: 100%;
+    }
+    30% {
+        top: 60px;
+        left: 100%;
+    }
+    45% {
+        top: 60px;
+        left: 50%;
+    }
+    60% {
+        top: 60px;
+        left: 0;
+    }
+    75% {
+        top: 60px;
+        left: -20px;
+        width: 40px;
+    }
+    90% {
+        top: -10px;
+        left: -20px;
+        width: 40px;
+    }
+    100% {
+        top: -10px;
+        left: 20%;
+    }
+}
+
+@keyframes loading-bot-13 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    15% {
+        bottom: -10px;
+        right: 80%;
+    }
+    30% {
+        bottom: 60px;
+        right: 80%;
+    }
+    45% {
+        bottom: 60px;
+        right: 50%;
+    }
+    60% {
+        bottom: 60px;
+        right: -40px;
+    }
+    75% {
+        bottom: -10px;
+        right: -40px;
+    }
+    90% {
+        bottom: -10px;
+        right: 0;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
     }
 }
