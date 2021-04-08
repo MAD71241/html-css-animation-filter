@@ -224,11 +224,33 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
 @keyframes loading {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* risoluzione esercizio 11 */
+
+.ex-11-icon:hover {
+    animation-name: loading_backwards;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes loading_backwards {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
