@@ -115,3 +115,16 @@
     height: 50px;
     width: 50px;
 }
+
+/* risoluzione esercizio 6 */
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* risoluzione esercizio 7 */
+
+.ex-7-img:hover {
+    transition: 1s;
+    filter: blur(3px) hue-rotate(90deg);
+}
